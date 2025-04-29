@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e9ecef; /* Cor de fundo suave */
     margin: 0;
     padding: 20px;
 }
@@ -10,38 +10,40 @@ body {
     margin: auto;
     background: white;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-h1, h2 {
+h1 {
     text-align: center;
+    color: #343a40; /* Cor do título */
+}
+
+h2 {
+    text-align: center;
+    color: #495057; /* Cor do subtítulo */
 }
 
 form {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 label {
     margin: 10px 0 5px;
+    color: #495057; /* Cor dos rótulos */
 }
 
 input {
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ced4da; /* Cor da borda dos campos */
     border-radius: 5px;
+    transition: border-color 0.3s;
 }
 
-button {
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+input:focus {
+    border-color: #80bdff; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
 }
-
-button:hover {
-    background-color:
