@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de CTEs</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de CTEs</h1>
+        <form id="cteForm">
+            <label for="numero_cte">Número da CTE:</label>
+            <input type="text" id="numero_cte" name="numero_cte" required>
+
+            <label for="numero_nota">Número da Nota:</label>
+            <input type="text" id="numero_nota" name="numero_nota" required>
+
+            <label for="nome_empresa">Nome da Empresa:</label>
+            <input type="text" id="nome_empresa" name="nome_empresa" required>
+
+            <label for="valor">Valor da CTE:</label>
+            <input type="number" id="valor" name="valor" required>
+
+            <label for="status">Status:</label>
+            <input type="text" id="status" name="status" required>
+
+            <label for="acao_realizada">Ação Realizada:</label>
+            <input type="text" id="acao_realizada" name="acao_realizada" required>
+
+            <label for="data_acao">Data da Ação:</label>
+            <input type="date" id="data_acao" name="data_acao" required>
+
+            <label for="proxima_acao">Próxima Ação:</label>
+            <input type="text" id="proxima_acao" name="proxima_acao" required>
+
+            <label for="data_proxima_acao">Data da Próxima Ação:</label>
+            <input type="date" id="data_proxima_acao" name="data_proxima_acao" required>
+
+            <button type="submit">Adicionar CTE</button>
+        </form>
+
+        <h2>CTEs Cadastrados</h2>
+        <table id="cteTable">
+            <thead>
+                <tr>
+                    <th>Número da CTE</th>
+                    <th>Número da Nota</th>
+                    <th>Nome da Empresa</th>
+                    <th>Valor</th>
+                    <th>Status</th>
+                    <th>Ação Realizada</th>
+                    <th>Data da Ação</th>
+                    <th>Próxima Ação</th>
+                    <th>Data da Próxima Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os dados dos CTEs serão inseridos aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
